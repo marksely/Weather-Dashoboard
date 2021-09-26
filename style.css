@@ -27,6 +27,7 @@ body {
     width: 75vw;
     height: 20vw; 
     line-height: 50px;
+    padding: 15px;
 }
 
 .top-row {
@@ -49,4 +50,13 @@ body {
 .searches {
     width: 21.3vw;    
     padding: 20px;
+}
+
+.custom-card{
+    height: 30vh;
+    margin: 10px;
+}
+
+.card-body {
+    width: 15vw;
 }
