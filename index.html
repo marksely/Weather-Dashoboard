@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF=8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href='./style.css'>
+    </head>
+    <body>
+
+        <header class="jumbotron custom-header">
+            <h1>Weather Dashboard</h1>
+        </header>
+
+        <div class='top-row'>
+            <section class='city-search'>
+                <h2>Search for a city:</h2>
+                <input class="form-control form-control-lg search-bar" type="text" placeholder="San Diego">
+                <button type="button" class="btn btn-primary">Search</button>
+            </section>
+
+            <section class='box'>
+                <h2>City</h2>
+                <p>Temp: <span id='temp'></span></p>
+                <p>Wind: <span id='wind'></span></p>
+                <p>Humidity: <span id='humidity'></span></p>
+                <p>UV Index: <span id='uv-index'></span></p>
+            </section>
+        </div>
+        <div class='second-row'>
+            <div class='searches'>
+                <p>recent searches</p>
+                <button type="button" class="btn btn-primary">Search</button>
+            </div>
+            <div class='forecast'>
+                <section>
+                    <h2>5 Day Forcast</h2>
+                    
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

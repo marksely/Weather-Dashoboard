@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-header {
+    width: 100vw;
+    font-size: 20px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+.search-bar {
+    width: 20vw;
+}
+
+.city-search {
+    padding: 10px;
+}
+.btn { 
+    width: 20vw;
+}
+
+.box {
+    border: black solid 2px;
+    width: 75vw;
+    height: 20vw; 
+    line-height: 50px;
+}
+
+.top-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.second-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.forecast {
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+    height: 35vh;
+}
+
+.searches {
+    width: 21.3vw;    
+    padding: 20px;
+}
