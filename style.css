@@ -38,6 +38,7 @@ body {
 .second-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .forecast {
@@ -59,4 +60,5 @@ body {
 
 .card-body {
     width: 15vw;
+    box-sizing: border-box;
 }

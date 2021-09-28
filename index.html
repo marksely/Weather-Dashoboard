@@ -14,12 +14,12 @@
         <div class='top-row'>
             <section class='city-search'>
                 <h2>Search for a city:</h2>
-                <input class="form-control form-control-lg search-bar" type="text" placeholder="San Diego">
-                <button type="button" class="btn btn-primary">Search</button>
+                <input id='searchBar' class="form-control form-control-lg search-bar" type="text" placeholder="San Diego">
+                <button type="button" class="btn btn-primary" id='searchBtn'>Search</button>
             </section>
 
             <section class='box'>
-                <h2>City</h2>
+                <h2> <span id='city'> </span>(<span id="date"></span>)<span id='topIcon'></span></h2>
                 <p>Temp: <span id='temp'></span></p>
                 <p>Wind: <span id='wind'></span></p>
                 <p>Humidity: <span id='humidity'></span></p>
@@ -37,7 +37,17 @@
                     <div class='forecast'>
                         <div class="card custom-card">
                             <div class="card-body">
-                                <h3>date</h3>
+                                <h3 id='cardOneDate'>date</h3>
+                                <span id='cardOneIcon'></span>
+                                <p id='cardOneTemp'>temp</p>
+                                <p id='cardOneWind'>wind</p>
+                                <p id='cardOneHumid'>humidity</p>
+                            </div>
+                        </div>
+                        <div class="card custom-card">
+                            <div class="card-body">
+                                <h3 id='cardTwoDate'>date</h3>
+                                <span id='cardTwoIcon'></span>
                                 <p>temp</p>
                                 <p>wind</p>
                                 <p>humidity</p>
@@ -45,7 +55,8 @@
                         </div>
                         <div class="card custom-card">
                             <div class="card-body">
-                                <h3>date</h3>
+                                <h3 id='cardThreeDate'>date</h3>
+                                <span id='cardThreeIcon'></span>
                                 <p>temp</p>
                                 <p>wind</p>
                                 <p>humidity</p>
@@ -53,7 +64,8 @@
                         </div>
                         <div class="card custom-card">
                             <div class="card-body">
-                                <h3>date</h3>
+                                <h3 id='cardFouroDate'>date</h3>
+                                <span id='cardFourIcon'></span>
                                 <p>temp</p>
                                 <p>wind</p>
                                 <p>humidity</p>
@@ -61,15 +73,8 @@
                         </div>
                         <div class="card custom-card">
                             <div class="card-body">
-                                <h3>date</h3>
-                                <p>temp</p>
-                                <p>wind</p>
-                                <p>humidity</p>
-                            </div>
-                        </div>
-                        <div class="card custom-card">
-                            <div class="card-body">
-                                <h3>date</h3>
+                                <h3 id='cardFiveDate'>date</h3>
+                                <span id='cardFiveIcon'></span>
                                 <p>temp</p>
                                 <p>wind</p>
                                 <p>humidity</p>
@@ -80,5 +85,6 @@
                 </section>
             </div>
         </div>
+    <script src="./Js.js"></script>
     </body>
 </html>
