@@ -10,29 +10,29 @@
         <header class="jumbotron custom-header">
             <h1>Weather Dashboard</h1>
         </header>
-
-        <div class='top-row'>
-            <section class='city-search'>
+      <div>
+        <div class='row'>
+            <section class='city-search col'>
                 <h2>Search for a city:</h2>
                 <input id='searchBar' class="form-control form-control-lg search-bar" type="text" placeholder="San Diego">
                 <button type="button" class="btn btn-primary" id='searchBtn'>Search</button>
             </section>
 
-            <section class='box'>
+            <section class='box col-9'>
                 <h2> <span id='city'> </span>(<span id="date"></span>)<span id='topIcon'></span></h2>
                 <p>Temp: <span id='temp'></span></p>
                 <p>Wind: <span id='wind'></span></p>
                 <p>Humidity: <span id='humidity'></span></p>
                 <p>UV Index: <span id='uv-index'></span></p>
             </section>
-        </div>
-        <div class='second-row'>
-            <div class='searches'>
+        
+        <div class='row'>
+            <div class='col local'>
                 <p>recent searches</p>
                 <button type="button" class="btn btn-primary">Search</button>
             </div>
             <div>
-                <section>
+                <section class='col fiveDay'>
                     <h2>5 Day Forcast</h2>
                     <div class='forecast'>
                         <div class="card custom-card">

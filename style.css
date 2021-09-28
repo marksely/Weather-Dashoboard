@@ -17,6 +17,7 @@ body {
 
 .city-search {
     padding: 10px;
+    margin-left: 10px;
 }
 .btn { 
     width: 20vw;
@@ -28,6 +29,9 @@ body {
     height: 20vw; 
     line-height: 50px;
     padding: 15px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .top-row {
@@ -49,16 +53,27 @@ body {
 }
 
 .searches {
-    width: 21.3vw;    
+    width: 20vw;    
     padding: 20px;
 }
 
 .custom-card{
     height: 30vh;
     margin: 10px;
+    background-color: rgb(68, 81, 93);
+    color: white;
+    font-size: 20px;
 }
 
 .card-body {
     width: 15vw;
     box-sizing: border-box;
+}
+
+.local {
+    margin-left: 20px;
+}
+
+.fiveDay {
+    margin-left: 30px;
 }
