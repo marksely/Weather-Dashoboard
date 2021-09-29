@@ -8,6 +8,7 @@ var wind = document.querySelector('#wind');
 var humidity = document.querySelector('#humidity');
 var uvIndex = document.querySelector('#uv-index');
 var cityLocation = document.querySelector('#city');
+var cityList = document.querySelector('#recents');
 
 var lonInfo = '';
 var latInfo = '';
@@ -42,12 +43,28 @@ var fiveTemp = document.querySelector('#fiveTemp');
 var fiveWind = document.querySelector('#fiveWind');
 var fiveHumid = document.querySelector('#fiveHumid');
 
+var citiesArr = [];
+
+function getSearchs() {
+
+    for(var i = 0; i < citiesArr.length; i++) {
+        var citySearched = citiesArr[i];
+
+        var btnEl = document.createElement('button');
+        btnEl.textContent = citySearched;
+        
+        cityList.appendChild(btnEl);
+    }
+}
+
 
 searchBtn.addEventListener('click', getApi);
 
 function getApi() {
 
     var city = document.querySelector('#searchBar').value;
+
+    citiesArr.push(city);
 
     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=6efa584486df0618a8f11e0673683bba&units=imperial')
         .then(function (response) {
@@ -69,6 +86,7 @@ function getApi() {
             latInfo = data.coord.lat;
             getFiveDay();
         })
+        localStorage.setItem('cities', JSON.stringify(citiesArr));
 }
 
 
@@ -133,3 +151,14 @@ function getFiveDay() {
             fiveHumid.textContent = data.daily[5].humidity + '%';
         })
 }
+
+function inIt() {
+   var storedCities = JSON.parse(localStorage.getItem('cities'));
+
+   if(storedCities) {
+       citiesArr = storedCities;
+   }
+   getSearchs();
+}
+
+inIt();

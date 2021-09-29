@@ -17,10 +17,12 @@ body {
 
 .city-search {
     padding: 10px;
+    height: 20vh;
     margin-left: 10px;
 }
 .btn { 
     width: 20vw;
+    font-size: 20px;
 }
 
 .box {
@@ -72,8 +74,13 @@ body {
 
 .local {
     margin-left: 20px;
+    height:60vh;
 }
 
 .fiveDay {
     margin-left: 30px;
+}
+
+.recents {
+    display: inline-block;
 }
